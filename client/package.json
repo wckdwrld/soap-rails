@@ -30,7 +30,9 @@
     "react-dom": "^15.6.1",
     "react-instagram-embed": "^1.2.0",
     "react-on-rails": "8.0.0",
+    "react-player": "^0.18.0",
     "reactstrap": "^4.6.2",
+    "redux": "^3.7.0",
     "webpack": "^2.3.3",
     "webpack-manifest-plugin": "^1.1.0"
   },
