@@ -24,9 +24,9 @@ export default class NavBar extends React.Component {
                 <a href="#"><strong> SOAP </strong></a>
               </div>
               <div className="nav-items">
-                  <a href="">CONCEPT</a>
-                  <a href="">PODCAST</a>
-                  <a href="">CONTACT</a>
+                  <a href="">concept</a>
+                  <a href="">podcast</a>
+                  <a href="">contact</a>
               </div>
           </div>
         </ReactCSSTransitionGroup>

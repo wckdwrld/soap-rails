@@ -14,22 +14,26 @@
  *= require_self
  */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:700')
+
 /* Navbar Styles */
 
 #navblock
 	width: 100%
 	height: 70vh
-	background-color: #DE393C
+	background-color: #FDEF99
 
 #navbar 
+	margin-top: 5vh
 	display: block
 	width: 100%
-	color: white !important
 
 	a
-		color: white
+		color: black
 
 	.nav-logo
+		font-weight: bold !important
+		font-family: 'Roboto', sans-serif
 		font-size: 3vw
 		letter-spacing: .5vw
 		display: inline-block
@@ -39,6 +43,7 @@
 			text-decoration: none
 
 	.nav-items
+		font-family: 'Roboto Mono', monospace
 		font-size: 1vw
 		letter-spacing: .2vw
 		display: inline-block
@@ -62,7 +67,27 @@
 
 /*****************/
 
+/* Content Block Styles */
 
+#block-seperator
+	font-family: 'Roboto Mono', monospace
+	font-size: 3vw
+	text-align: center
+.content-wrapper
+	margin-left: 50vw
+.content-head
+	font-family: 'Roboto', sans-serif
+	font-size: 1.2vw
+	font-weight: bold
+.content-body
+	font-family: 'Roboto Mono', monospace
+	width: 25vw
+
+
+/*****************/
+
+body
+	background-color: #FDEF99 !important
 
 
 .links
