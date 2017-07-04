@@ -24,7 +24,8 @@ const config = {
       './app/bundles/HelloWorld/startup/registration',
       './app/bundles/NavBar/startup/registration',
       './app/bundles/Portfolio/startup/registration',
-    ],
+      './app/bundles/ContentBlock/startup/registration',
+    ].concat(glob.sync("./app/bundles/**/startup/*")),
   },
 
   output: {

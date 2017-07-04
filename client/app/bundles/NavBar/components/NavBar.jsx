@@ -1,51 +1,40 @@
 import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class NavBar extends React.Component {
+
   constructor(props) {
     super(props);
+  }
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
+
   render() {
     return (
-      <div>
-        <Navbar light toggleable>
-          <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">SOAP</NavbarBrand>
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-             <NavItem>
-                <NavLink href="/concept">Concept</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>
-                |
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/podcast">Podcast</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink>
-                |
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/portfolio">Services</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+    <div id="navblock">
+      <nav id="navbar">
+        <ReactCSSTransitionGroup
+            transitionName="navbar"
+            transitionAppear={true}
+            transitionAppearTimeout={500}
+            transitionEnter={false}
+            transitionLeave={false}>
+
+          <div className="navWide">
+              <div className="nav-logo">
+                <a href="#"><strong> SOAP </strong></a>
+              </div>
+              <div className="nav-items">
+                  <a href="">CONCEPT</a>
+                  <a href="">PODCAST</a>
+                  <a href="">CONTACT</a>
+              </div>
+          </div>
+        </ReactCSSTransitionGroup>
+      </nav>
+    </div>
+
+
+      
     );
   }
 }
