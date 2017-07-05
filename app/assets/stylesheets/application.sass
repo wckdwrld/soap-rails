@@ -42,6 +42,7 @@
 		a
 			text-decoration: none
 
+
 	.nav-items
 		font-family: 'Roboto Mono', monospace
 		font-size: 1vw
@@ -53,6 +54,9 @@
 		a
 			margin-left: 4vw
 			text-decoration: none
+		a:hover
+			font-style: italic
+
 
 	.navbar-appear 
 		opacity: 0.01
@@ -69,6 +73,8 @@
 
 /* Content Block Styles */
 
+.content-block
+	background-color: #FDEF99
 #block-seperator
 	font-family: 'Roboto Mono', monospace
 	font-size: 3vw
@@ -82,7 +88,17 @@
 .content-body
 	font-family: 'Roboto Mono', monospace
 	width: 25vw
-
+	margin-bottom: 5vw
+.content-image
+	object-fit: cover
+	width: 20vw
+	height: 20vw
+	margin-left: -20vw
+	margin-right: 3vw
+	mix-blend-mode: multiply
+	float: left
+	width: 20vw
+	filter: grayscale(100%)
 
 /*****************/
 
