@@ -8,7 +8,7 @@ export default class ContentBlock extends React.Component {
   render() {
     return (
       <div className = "content-block">
-        <p id = "block-seperator">
+        <p id = "horizontal-block-seperator">
           -----------------------------
         </p>
         <div className="content-wrapper">
@@ -27,7 +27,7 @@ export default class ContentBlock extends React.Component {
             had to sacrifice grammar for compiling...
           </p>
         </div>
-        <p id = "block-seperator">
+        <p id = "horizontal-block-seperator">
           -----------------------------
         </p>
       </div>
