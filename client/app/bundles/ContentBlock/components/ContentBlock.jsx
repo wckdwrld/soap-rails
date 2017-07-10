@@ -8,9 +8,6 @@ export default class ContentBlock extends React.Component {
   render() {
     return (
       <div className = "content-block">
-        <p id = "horizontal-block-seperator">
-          -----------------------------
-        </p>
         <div className="content-wrapper">
           <img className="content-image" src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/1382809_10152484059162334_1836528230_n.jpg?oh=534567ea3f02a27b184fec1aeb085bf2&oe=5A0D3103"></img>
           <p className="content-head">0 : PODCAST EXAMPLE</p>
@@ -27,9 +24,6 @@ export default class ContentBlock extends React.Component {
             had to sacrifice grammar for compiling...
           </p>
         </div>
-        <p id = "horizontal-block-seperator">
-          -----------------------------
-        </p>
       </div>
     );
   }

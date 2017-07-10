@@ -12,24 +12,16 @@ export default class NavBar extends React.Component {
     return (
     <div id="navblock">
       <nav id="navbar">
-        <ReactCSSTransitionGroup
-            transitionName="navbar"
-            transitionAppear={true}
-            transitionAppearTimeout={500}
-            transitionEnter={false}
-            transitionLeave={false}>
-
           <div className="navWide">
               <div className="nav-logo">
                 <a href="#"><strong> SOAP </strong></a>
               </div>
               <div className="nav-items">
-                  <a href="">concept</a>
-                  <a href="">podcast</a>
-                  <a href="">contact</a>
+                  <a href="concept">concept</a>
+                  <a href="podcast">podcast</a>
+                  <a href="contact">contact</a>
               </div>
           </div>
-        </ReactCSSTransitionGroup>
       </nav>
     </div>
 
