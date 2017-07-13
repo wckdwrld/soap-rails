@@ -20,152 +20,185 @@
 /* Navbar Styles */
 
 #navblock
-	width: 100%
-	height: 70vh
-	background-color: #FDEF99
+  width: 100%
+  height: 70vh
+  background-color: #FDEF99
 
 #navbar 
-	margin-top: 5vh
-	display: block
-	width: 100%
+  margin-top: 5vh
+  display: block
+  width: 100%
+  transition: 1s ease-in
+  a
+    color: black
 
-	a
-		color: black
+  .nav-logo
+    font-weight: black !important
+    font-family: 'Roboto', sans-serif
+    font-size: 3vw
+    letter-spacing: .8vw
+    display: inline-block
+    float: left
+    margin-left: 20vw
+    transition: 500ms ease-in
+    a
+      text-decoration: none
 
-	.nav-logo
-		font-weight: black !important
-		font-family: 'Roboto', sans-serif
-		font-size: 3vw
-		letter-spacing: .8vw
-		display: inline-block
-		float: left
-		margin-left: 20vw
-		a
-			text-decoration: none
+  .nav-logo-toggle
+    transition: 500ms ease-in
+    transform: translate3d(50vw, 0px, 0px)
 
-
-	.nav-items
-		font-family: 'Roboto Mono', monospace
-		font-size: 1vw
-		letter-spacing: .2vw
-		display: inline-block
-		float: right
-		margin-top: 2.8vh
-		margin-right: 20vw
-		a
-			margin-left: 4vw
-			text-decoration: none
-		a:hover
-			font-style: italic
-
-
-	.navbar-appear 
-		opacity: 0.01
-
-	.navbar-appear.navbar-appear-active 
-		opacity: 1
-		transition: 1s ease-in
+  .nav-items
+    font-family: 'Roboto Mono', monospace
+    font-size: 1vw
+    letter-spacing: .2vw
+    display: inline-block
+    float: right
+    margin-top: 2.8vh
+    margin-right: 20vw
+    a
+      margin-left: 4vw
+      text-decoration: none
+    a:hover
+      font-style: italic
 
 
+  .navbar-appear 
+    opacity: 0.01
 
+  .navbar-appear.navbar-appear-active 
+    opacity: 1
+    transition: 1s ease-in
 
+  .nav-slide-leave
+    margin-right: 0
 
+  .nav-slide-leave.nav-slide-leave-active
+    margin-right: -50vw
+    transition: 500ms ease-in
+    
+  .logo-slide-leave
+    margin-left: 20vw
+  .logo-slide-leave.logo-slide-leave-active
+    margin-left: 50vw
+    transition: 500ms ease-in
+
+  .logo-slide-enter
+    margin-left: 20vw
+
+  .logo-slide-enter.logo-slide-enter-active
+    margin-left: 50vw
+    transition: 1000ms ease-in
 /*****************/
 
 /* Content Block Styles */
 
 .content-block
-	background-color: #FDEF99
-	.content-wrapper
-		margin-bottom: 10vh
-		margin-left: 50vw
-	.content-head
-		margin-bottom: -0.3vh
-		font-family: 'Roboto', sans-serif
-		font-size: 1.5vw
-		font-weight: black
-	.content-body
+  background-color: #FDEF99
+  .content-wrapper
+    margin-bottom: 10vh
+    margin-left: 50vw
+  .content-head
+    margin-bottom: -0.3vh
+    font-family: 'Roboto', sans-serif
+    font-size: 1.5vw
+    font-weight: black
+  .content-body
 
-		font-family: 'Roboto Mono', monospace
-		font-size: 90%
-		width: 25vw
-	.content-image
-		width: 150px
-		height: 300px 
-		margin-left: -20vw
-		margin-right: 3vw
-		mix-blend-mode: multiply
-		float: left
-		width: 20vw
-		filter: grayscale(100%)
-	.content-links
-		margin-bottom: 4vh
-		font-family: 'Roboto Mono', monospace
-		font-weight: bold
-		font-style: italic
-		display: inline-block
-		a:link
-			color: black
+    font-family: 'Roboto Mono', monospace
+    font-size: 90%
+    width: 25vw
+  .content-image
+    width: 150px
+    height: 300px 
+    margin-left: -20vw
+    margin-right: 3vw
+    mix-blend-mode: multiply
+    float: left
+    width: 20vw
+    filter: grayscale(100%)
+  .content-links
+    margin-bottom: 4vh
+    font-family: 'Roboto Mono', monospace
+    font-weight: bold
+    font-style: italic
+    display: inline-block
+    a:link
+      color: black
+
+      
+.slide-in-enter
+  transform: translate(100%)
+
+.slide-in-enter.slide-in-enter-active
+  transform: translate(0%)
+  transition: transform 1000ms ease-in-out
+
+.slide-in-leave
+  transform: translate(0%)
+
+.slide-in-leave.slide-in-leave-active
+  transform: translate(100%)
+  transition: transform 1000ms ease-in-out
+
 
 /*****************/
 
 /* Contact Block Styles */
 
 .contact-block
-	background-color: #FDEF99
-	.contact-wrapper
-		margin-bottom: 10vh
-	.contact-form-right
-		margin-left: 52vw
-		width: 20vw
-		text-align: left
-	.contact-form-left
-		margin-bottom: -20vh
-		margin-left: 28vw
-		width: 20vw
-		text-align: right
-	.contact-head
-		font-family: 'Roboto', sans-serif
-		font-weight: black
-		font-size: 20pt
-	.contact-body
-		font-family: 'Roboto Mono', monospace
-		.contact-body-email
-			margin-top: 1vh
-			margin-bottom: -0.2vh
-			font-style: italic
-		.contact-body-phone
-			font-style: italic
+  background-color: #FDEF99
+  .contact-wrapper
+    margin-bottom: 10vh
+  .contact-form-right
+    margin-left: 52vw
+    width: 20vw
+    text-align: left
+  .contact-form-left
+    margin-bottom: -20vh
+    margin-left: 28vw
+    width: 20vw
+    text-align: right
+  .contact-head
+    font-family: 'Roboto', sans-serif
+    font-weight: black
+    font-size: 20pt
+  .contact-body
+    font-family: 'Roboto Mono', monospace
+    .contact-body-email
+      margin-top: 1vh
+      margin-bottom: -0.2vh
+      font-style: italic
+    .contact-body-phone
+      font-style: italic
 
 
 /*****************/
 
 body
-	background-color: #FDEF99 !important
+  background-color: #FDEF99 !important
 
 
 .links
-	margin-right: 15vw
-	color: white !important
+  margin-right: 15vw
+  color: white !important
 
 #video-background 
-
-	align:center
-	right: 0 
-	bottom: 0
-	margin-left: 10vw
-	width: 80vw
-	height: 20%
-	z-index: -100
+  right: 0 
+  bottom: 0
+  margin-left: 10vw
+  width: 80vw
+  height: 20%
+  z-index: -100
 
 
 
 video
-	margin-bottom: 10vh
-	
+  margin-bottom: 10vh
+  
 
 .nav-panel-links
-	margin-top: 50vh
-	transition: 500ms linear
-	nav-link 
-		transition: 500ms linear
+  margin-top: 50vh
+  transition: 500ms linear
+  nav-link 
+    transition: 500ms linear

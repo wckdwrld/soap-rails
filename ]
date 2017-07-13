@@ -8,6 +8,12 @@ export default class ContentBlock extends React.Component {
 
   render() {
     return (
+      <ReactCSSTransitionGroup
+	transitionName = "slide-in"
+	transitionAppear = {true}
+	transitionAppearTimeout={500}
+	transitionEnter = {false}
+	transitionLeave = {false}	
       <div className = "content-block">
         <div className="content-wrapper">
           <img className="content-image" src={this.props.image}></img>
@@ -19,7 +25,7 @@ export default class ContentBlock extends React.Component {
           </p>
           <p className="content-body">
 	  	{this.props.text}
-        </p>
+          </p>
         </div>
       </div>
     );
